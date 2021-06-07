@@ -3,7 +3,6 @@
   "extends": [
     "config:js-app",
     "group:definitelyTyped",
-    "group:linters",
     "docker:disableMajor"
   ],
   "supportPolicy": [
@@ -22,6 +21,15 @@
         "devDependencies"
       ],
       "automerge": true
+    },
+    {
+      "groupName": "linters and formatters",
+      "extends": [
+        "group:linters"
+      ],
+      "matchPackageNames": [
+        "prettier"
+      ]
     },
     {
       "groupName": "test",
