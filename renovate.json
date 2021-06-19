@@ -28,7 +28,8 @@
         "group:linters"
       ],
       "matchPackageNames": [
-        "prettier"
+        "prettier",
+        "eslint-config-next"
       ]
     },
     {
