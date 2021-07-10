@@ -23,6 +23,15 @@
       "automerge": true
     },
     {
+      "groupName": "nestjs monorepo",
+      "extends": [
+        "monorepo:nest"
+      ],
+      "matchPackagePrefixes": [
+        "^@nestjs/"
+      ]
+    },
+    {
       "groupName": "linters and formatters",
       "extends": [
         "group:linters"
