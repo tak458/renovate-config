@@ -3,7 +3,8 @@
   "extends": [
     "config:js-app",
     "group:definitelyTyped",
-    "docker:disableMajor"
+    "docker:disableMajor",
+    ":disableDependencyDashboard"
   ],
   "supportPolicy": [
     "lts_latest"
