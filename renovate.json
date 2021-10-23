@@ -11,7 +11,7 @@
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "every weekend"
+    "before 3am on Monday"
   ],
   "patch": {
     "automerge": true
