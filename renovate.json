@@ -50,6 +50,13 @@
       "matchPackagePrefixes": [
         "^@testing-library/"
       ]
+    },
+    {
+      "groupName":"node-fetch",
+      "matchPackageNames":[
+        "node-fetch",
+        "@types/node-fetch"
+      ]
     }
   ]
 }
