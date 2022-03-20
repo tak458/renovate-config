@@ -1,0 +1,27 @@
+name: renovate config
+
+on:
+  push:
+    branches:
+      - $default-branch
+  pull_request:
+    branches:
+      - $default-branch
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [14.x]
+    name: validate config
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm run validate
