@@ -1,13 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:js-app",
-    "group:definitelyTyped",
-    "docker:disableMajor",
-    ":disableDependencyDashboard"
-  ],
-  "supportPolicy": [
-    "lts_latest"
+    "docker:disableMajor"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
@@ -17,6 +11,16 @@
     "automerge": true
   },
   "packageRules": [
+    {
+      "extends": [
+        "config:js-app"
+      ],
+      "ignorePresets": [
+        "monorepo:nest",
+        "packages:linters",
+        "packages:jsUnitTest"
+      ]
+    },
     {
       "matchDepTypes": [
         "devDependencies"
@@ -35,7 +39,7 @@
     {
       "groupName": "linters and formatters",
       "extends": [
-        "group:linters"
+        "packages:linters"
       ],
       "matchPackageNames": [
         "prettier",
@@ -52,8 +56,8 @@
       ]
     },
     {
-      "groupName":"node-fetch",
-      "matchPackageNames":[
+      "groupName": "node-fetch",
+      "matchPackageNames": [
         "node-fetch",
         "@types/node-fetch"
       ]
