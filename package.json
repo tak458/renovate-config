@@ -1,0 +1,10 @@
+{
+  "name": "renovate-config",
+  "private": "true",
+  "scripts": {
+    "validate": "renovate-config-validator"
+  },
+  "dependencies": {
+    "renovate": "^32.6.5"
+  }
+}
