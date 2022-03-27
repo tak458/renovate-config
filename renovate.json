@@ -34,7 +34,7 @@
         "monorepo:nest"
       ],
       "matchPackagePrefixes": [
-        "^@nestjs/"
+        "@nestjs/"
       ]
     },
     {
@@ -53,7 +53,7 @@
         "packages:jsUnitTest"
       ],
       "matchPackagePrefixes": [
-        "^@testing-library/"
+        "@testing-library/"
       ]
     },
     {
