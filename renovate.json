@@ -2,8 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:js-app",
-    "docker:disableMajor",
-    ":preserveSemverRanges"
+    "docker:disableMajor"
   ],
   "ignorePresets": [
     "monorepo:nest",
