@@ -5,6 +5,7 @@
     "docker:disableMajor"
   ],
   "ignorePresets": [
+    "monorepo:react",
     "packages:linters",
     "packages:jsUnitTest"
   ],
@@ -16,6 +17,15 @@
     "automerge": true
   },
   "packageRules": [
+    {
+      "groupName": "react monorepo",
+      "extends": [
+        "monorepo:react"
+      ],
+      "matchPackagePrefixes": [
+        "@types/react"
+      ]
+    },
     {
       "groupName": "linters and formatters",
       "extends": [
