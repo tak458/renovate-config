@@ -17,6 +17,12 @@
   },
   "packageRules": [
     {
+      "groupName": "react monorepo",
+      "matchPackagePrefixes": [
+        "@types/react"
+      ]
+    },
+    {
       "groupName": "linters and formatters",
       "extends": [
         "packages:linters"
