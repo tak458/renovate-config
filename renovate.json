@@ -26,9 +26,9 @@
       "extends": [
         "packages:linters"
       ],
-      "matchPackageNames": [
+      "matchPackagePrefixes": [
         "prettier",
-        "eslint-config-next"
+        "eslint"
       ]
     },
     {
