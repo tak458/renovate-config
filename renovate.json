@@ -4,7 +4,6 @@
     "config:js-app"
   ],
   "ignorePresets": [
-    "packages:linters",
     "packages:jsUnitTest"
   ],
   "timezone": "Asia/Tokyo",
@@ -19,16 +18,6 @@
       "groupName": "react monorepo",
       "matchPackagePrefixes": [
         "@types/react"
-      ]
-    },
-    {
-      "groupName": "linters and formatters",
-      "extends": [
-        "packages:linters"
-      ],
-      "matchPackagePrefixes": [
-        "prettier",
-        "eslint"
       ]
     },
     {
