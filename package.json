@@ -5,6 +5,6 @@
     "validate": "renovate-config-validator"
   },
   "dependencies": {
-    "renovate": "32.99.5"
+    "renovate": "32.102.2"
   }
 }
