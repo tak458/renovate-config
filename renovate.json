@@ -9,7 +9,7 @@
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "on the last day of the month"
+    "on the 27th through 31th day of the month"
   ],
   "patch": {
     "automerge": true
