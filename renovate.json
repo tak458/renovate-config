@@ -16,12 +16,6 @@
   },
   "packageRules": [
     {
-      "groupName": "react monorepo",
-      "matchPackagePrefixes": [
-        "@types/react"
-      ]
-    },
-    {
       "groupName": "test",
       "extends": [
         "packages:jsUnitTest"
