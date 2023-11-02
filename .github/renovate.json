@@ -1,9 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>tak458/renovate-config"
+    "config:js-app"
   ],
-  "ignorePresets": [
-    "npm:unpublishSafe"
-  ]
+  "patch": {
+    "automerge": true
+  },
+  "minor": {
+    "automerge": true
+  }
 }
