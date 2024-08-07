@@ -9,7 +9,7 @@
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "on the 27th through 31th day of the month"
+    "after 5pm and before 8pm every weekday"
   ],
   "patch": {
     "automerge": true
