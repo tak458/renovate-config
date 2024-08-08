@@ -19,5 +19,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npm ci
-      - run: npm run validate
+      - name: Validate renovate config
+        run: npx --yes --package renovate -- renovate-config-validator default.json
