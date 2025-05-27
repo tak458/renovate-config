@@ -16,12 +16,23 @@
   },
   "packageRules": [
     {
+      "groupName": "minor and patch updates for linter and formatter",
+      "matchPackageNames": [
+        "/eslint/",
+        "/prettier/"
+      ],
+      "automerge": true,
+      "matchUpdateTypes": ["patch", "minor"]
+    },
+    {
       "groupName": "test",
       "extends": [
         "packages:jsUnitTest"
       ],
-      "matchPackagePrefixes": [
-        "@testing-library/"
+      "matchPackageNames": [
+        "/^@testing-library/",
+        "/vitest/",
+        "@vitejs/plugin-react"
       ]
     },
     {
@@ -31,5 +42,10 @@
         "@types/node-fetch"
       ]
     }
-  ]
+  ],
+  "helm-values": {
+    "managerFilePatterns": [
+      "/helm/.+\\.yaml$/"
+    ]
+  }
 }
