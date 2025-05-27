@@ -1,5 +1,7 @@
 {
   "name": "renovate-config",
   "private": "true",
-  "scripts": {}
+  "scripts": {
+    "validate": "npx --yes --package renovate -- renovate-config-validator default.json"
+  }
 }
