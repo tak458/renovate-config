@@ -16,7 +16,7 @@
   },
   "packageRules": [
     {
-      "groupName": "minor and patch updates for linter and formatter",
+      "groupName": "linter-and-formatter",
       "matchPackageNames": [
         "/eslint/",
         "/prettier/"
