@@ -21,8 +21,11 @@
         "/eslint/",
         "/prettier/"
       ],
-      "automerge": true,
-      "matchUpdateTypes": ["patch", "minor"]
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "automerge": true
     },
     {
       "groupName": "test",
@@ -33,7 +36,12 @@
         "/^@testing-library/",
         "/vitest/",
         "@vitejs/plugin-react"
-      ]
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "automerge": true
     },
     {
       "groupName": "node-fetch",
