@@ -9,12 +9,18 @@
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
-    "after 11am and before 5pm every weekday"
+    "every weekend"
   ],
-  "patch": {
-    "automerge": true
-  },
+  "automerge": true,
   "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "groupName": "minor and patch dependencies",
+      "automerge": true
+    },
     {
       "groupName": "linter-and-formatter",
       "matchPackageNames": [
