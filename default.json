@@ -4,9 +4,6 @@
     "config:js-app",
     "npm:unpublishSafe"
   ],
-  "ignorePresets": [
-    "packages:jsUnitTest"
-  ],
   "timezone": "Asia/Tokyo",
   "schedule": [
     "every weekend"
@@ -20,41 +17,6 @@
       ],
       "groupName": "minor and patch dependencies",
       "automerge": true
-    },
-    {
-      "groupName": "linter-and-formatter",
-      "matchPackageNames": [
-        "/eslint/",
-        "/prettier/"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
-      "automerge": true
-    },
-    {
-      "groupName": "test",
-      "extends": [
-        "packages:jsUnitTest"
-      ],
-      "matchPackageNames": [
-        "/^@testing-library/",
-        "/vitest/",
-        "@vitejs/plugin-react"
-      ],
-      "matchUpdateTypes": [
-        "patch",
-        "minor"
-      ],
-      "automerge": true
-    },
-    {
-      "groupName": "node-fetch",
-      "matchPackageNames": [
-        "node-fetch",
-        "@types/node-fetch"
-      ]
     }
   ],
   "helm-values": {
