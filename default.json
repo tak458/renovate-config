@@ -11,17 +11,24 @@
   "automerge": true,
   "packageRules": [
     {
+      "groupName": "minor and patch dependencies",
       "matchUpdateTypes": [
         "patch",
         "minor"
       ],
-      "groupName": "minor and patch dependencies",
+      "ignorePaths": [
+        "helm/**"
+      ],
       "automerge": true
+    },
+    {
+      "groupName": "helm values",
+      "matchManagers": [
+        "helm-values"
+      ],
+      "managerFilePatterns": [
+        "/helm/.+\\.ya?ml$/"
+      ]
     }
-  ],
-  "helm-values": {
-    "managerFilePatterns": [
-      "/helm/.+\\.yaml$/"
-    ]
-  }
+  ]
 }
