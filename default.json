@@ -22,12 +22,24 @@
       "automerge": true
     },
     {
-      "groupName": "helm values",
+      "groupName": "helm chart",
       "matchManagers": [
+        "helmv3",
         "helm-values"
       ],
       "managerFilePatterns": [
         "/helm/.+\\.ya?ml$/"
+      ],
+      "bumpVersions": [
+        {
+          "filePatterns": [
+            "{{packageFileDir}}/Chart.{yaml,yml}"
+          ],
+          "matchStrings": [
+            "version:\\s(?<version>[^\\s]+)"
+          ],
+          "bumpType": "{{#if isPatch}}patch{{else}}minor{{/if}}"
+        }
       ]
     }
   ]
