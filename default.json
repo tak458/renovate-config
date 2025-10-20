@@ -27,9 +27,6 @@
         "helmv3",
         "helm-values"
       ],
-      "managerFilePatterns": [
-        "/helm/.+\\.ya?ml$/"
-      ],
       "bumpVersions": [
         {
           "filePatterns": [
