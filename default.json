@@ -1,14 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:js-app",
-    "npm:unpublishSafe"
+    "config:best-practices",
+    ":pinAllExceptPeerDependencies",
+    ":automergeMinor"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
     "* * * * 2,3"
   ],
-  "automerge": true,
   "packageRules": [
     {
       "groupName": "minor and patch dependencies",
