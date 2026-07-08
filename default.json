@@ -3,7 +3,8 @@
   "extends": [
     "config:best-practices",
     ":pinAllExceptPeerDependencies",
-    ":automergeMinor"
+    ":automergeMinor",
+    ":automergeDigest"
   ],
   "timezone": "Asia/Tokyo",
   "schedule": [
